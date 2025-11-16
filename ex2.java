@@ -23,7 +23,7 @@ public class ex2 {
         for (temp t : temps) {
             t.tempDetails();
         }
-        
+        input.close();
     }
     
 }

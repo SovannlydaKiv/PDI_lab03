@@ -34,6 +34,6 @@ public class ex3 {
         for (ems e : eMs) { 
             e.EmployeeDetails();
         }
-        
+        input.close();
     }
 }
