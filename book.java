@@ -4,27 +4,21 @@ public class book {
     String title;
     String author;
     String ID;
-    double price;
+    float price;
 
     book(){ }
     
-    book(int n, String title, String author, String ID, double price){
+    book(int n, String title, String author, String ID, float price){
         this.n = n;
         this.ID = ID;
         this.title = title ;
         this.author = author;
         this.price = price; 
     }
-
-    public void print(){
-        System.out.println("Number of books: " + n);
-        System.out.println("Title: " + title);
-        System.out.println("Author: " + author);
-        System.err.println("ID" + ID);
-
-        System.out.println("-------------------------------\n");
-    }
     
+    public void displayAllDetails(){
+        System.out.printf("%2d | %2s | %-20s | %-20s| $%-4.2f \n", n,ID,title,author,price, "\n");
+    }
 }
         
 
